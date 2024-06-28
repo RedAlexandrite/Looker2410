@@ -26,6 +26,11 @@ view: inventory_items {
     timeframes: [raw, time, date, week, month, quarter, year]
     sql: ${TABLE}.sold_at ;;
   }
+  measure: cost_1 {
+    label: "Cost"
+    type: number
+    sql: ${cost} ;;
+  }
   measure: count {
     type: count
     drill_fields: [id, products.id, products.item_name, order_items.count, order_items_vijaya.count]
