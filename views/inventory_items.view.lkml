@@ -13,7 +13,7 @@ view: inventory_items {
   }
   dimension_group: created {
     type: time
-    timeframes: [raw, time, date, week, month, quarter, year]
+    timeframes: [raw, time, date, week, day_of_month, day_of_week, month, quarter, year]
     sql: ${TABLE}.created_at ;;
   }
   dimension: product_id {
