@@ -35,7 +35,7 @@ view: order_items {
     sql: ${TABLE}.sale_price ;;
   }
   measure: sale_price_1 {
-    label: "Sale Price"
+    label: "Expected Revenue"
     type: number
     sql: ${sale_price} ;;
   }

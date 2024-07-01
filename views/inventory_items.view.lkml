@@ -27,7 +27,7 @@ view: inventory_items {
     sql: ${TABLE}.sold_at ;;
   }
   measure: cost_1 {
-    label: "Cost"
+    label: "Actual Revenue"
     type: number
     sql: ${cost} ;;
   }
